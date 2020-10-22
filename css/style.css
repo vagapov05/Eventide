@@ -1,0 +1,817 @@
+@import url("fonts.css");
+@import url("font-awesome.min.css");
+body {
+    font-family: "Ubuntu";
+}
+.container,
+.container-fluid {
+    border: 0px solid blue;
+    margin: auto;
+}
+.row {
+    border: 0px solid orange;
+}
+h4 {
+    font-family: "Montserrat-Bold";
+    font-size: 31px;
+    color: #828689;
+}
+h3 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 800;
+    color: #828689;
+}
+h2 {
+    font-family: "Ubuntu";
+    font-size: 22px;
+    color: #828689;
+}
+.text {
+    font-size: 20px;
+    color: #828689;
+    text-align: center;
+}
+.buttons {
+    width: 344px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-secondary {
+    width: 157px;
+    height: 50px;
+    background-color: #7ea4e8;
+    border-color: none;
+}
+.btn :hover {
+    background-color: #7ea4e8;
+}
+.btn .fa {
+    opacity: 0;
+}
+.btn:hover .fa {
+    opacity: 1;
+}
+/*==========================================HEADER================== */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+.head {
+    max-width: 615px;
+    height: 465px;
+    border: 0px solid red;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head .date {
+    width: 615px;
+    height: 95px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.date h4 {
+    color: white;
+    border-right: 3px solid white;
+    line-height: 30px;
+    margin: 40px 0 40px 0;
+}
+h4:last-child {
+    border-right: none;
+    border-left: none;
+}
+h4:first-child {
+    border-left: none;
+}
+.head p {
+    font-family: "Ubuntu-Light";
+    border: 0px solid black;
+    font-size: 19px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+.head .buttons {
+    width: 344px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.head .btn-secondary {
+    width: 157px;
+    height: 50px;
+    background-color: #7ea4e8;
+    border-color: none;
+}
+.head .btn :hover {
+    background-color: #6a7079;
+}
+.head .btn .fa {
+    opacity: 0;
+}
+.head .btn:hover .fa {
+    opacity: 1;
+    background-color: #7ea4e8;
+}
+
+/*===========================================CONTENT============================== */
+.content {
+    width: 100%;
+    background-color: white;
+    border: 0px solid green;
+    margin: auto;
+}
+/* ==============================CONTENT parth 1 left======================= */
+.parth1 {
+    /* max-width: 1170px;
+    max-height: 1278px; */
+    border: 0px solid #3ae90e;
+    border-bottom: 8px solid #f0f0f1;
+}
+.parth1 .left {
+    /* max-height: 455px; */
+    border: 0px solid #0febef36;
+    padding-top: 111px;
+}
+.parth1 .left h3 {
+    padding-bottom: 36px;
+}
+.parth1 .text {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* ==============================CONTEN parth 1 right============================= */
+.parth1 .right {
+    /* max-height: 455px; */
+    border: 0px solid #0febef38;
+    padding-top: 111px;
+}
+.nav-link {
+    background-color: #ececec;
+    border: 3px solid #ececec;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #abb1ba;
+    background-color: white;
+    border-radius: 4px;
+    border-bottom: white;
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: 800;
+}
+.parth1 .right a {
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: 800;
+    color: #9097a1;
+    padding-top: 13px;
+}
+a:hover {
+    color: #52565c;
+    text-decoration: underline;
+}
+.tab-content {
+    /* max-height: 275px; */
+    border: 3px solid #ececec;
+    border-top: none;
+}
+.tab-content .text {
+    text-align: justify;
+    padding: 20px;
+}
+.parth1 ul li {
+    font-size: 18px;
+    color: #828689;
+    text-align: justify;
+    list-style: none;
+    padding-bottom: 5px;
+}
+ul li .fa {
+    color: #2cc7c1;
+}
+.parth1 .ulimg {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 30px 0;
+}
+.parth1 .imgtab {
+    width: 100%;
+}
+.parth1 .imgtab:hover {
+    background-image: url("../img/tab_img2.png");
+}
+
+/* =========================CONTENT parth 1 event speakers=================================== */
+.eventspeakers {
+    /* max-height: 830px; */
+    border: 0px solid #0febef36;
+    padding-top: 105px;
+    padding-bottom: 90px;
+}
+.eventspeakers h3 {
+    text-align: center;
+}
+.eventspeakers h2 {
+    text-align: center;
+}
+
+/* ============================== CONTENT parth 1 cards ============================ */
+.eventspeakers .card {
+    /* max-height: 345px; */
+    border: 0px solid #0febef36;
+    margin-top: 30px;
+}
+H5 {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    color: #777a7d;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+H5:hover {
+    color: #6bd8d3;
+}
+.eventspeakers a {
+    text-decoration: none;
+}
+
+.card {
+    width: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img {
+    width: 145px;
+    height: 145px;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card-img .fa {
+    width: 145px;
+    height: 145px;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 200ms;
+    opacity: 0;
+    color: white;
+    font-size: 35px;
+}
+.card-img .fa:hover {
+    opacity: 1;
+    background: #2cc7c1;
+}
+.card-text {
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: #828282;
+    font-weight: lighter;
+    text-align: center;
+}
+.second h2 {
+    text-align: center;
+    padding-top: 48px;
+}
+.btn-secondary {
+    margin-top: 10px;
+}
+/* ==============================CONTENT parth 2 left=========================== */
+
+.parth2 {
+    /* max-width: 1170px; */
+    border: 0px solid #c72cbf;
+    padding-top: 120px;
+}
+.parth2 .left {
+    /* height: 333px; */
+    border: 0px solid #0febef36;
+    padding-top: 18px;
+}
+.parth2 .right {
+    /* height: 333px; */
+    border: 0px solid #0febef36;
+    padding-top: 18px;
+}
+.parth2 .text {
+    font-size: 15px;
+    color: #828689;
+    text-align: justify;
+}
+.parth2 .left a {
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: bolder;
+    color: #2cc7c1;
+    text-decoration: none;
+}
+/* ==============================content PARTH2 right=========================== */
+.parth2 .right a {
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: 800;
+    color: #9097a1;
+    padding-top: 13px;
+}
+.parth2 .tab-content {
+    color: #747a84;
+    padding-top: 25px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.reference {
+    display: none;
+}
+.reference ~ .story {
+    display: none;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: #9097a1;
+}
+.reference + label {
+    position: absolute;
+    top: 77px;
+    left: 500px;
+
+    padding: 3px;
+    color: #2cc7c1;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.reference:checked ~ .story {
+    display: block;
+    background: Snow;
+    padding: 20px;
+}
+.time {
+    border: 0px solid #2cc7c1;
+    border-radius: 3px;
+    color: white;
+    background-color: #2cc7c1;
+    margin: 25px;
+}
+/* ==========================content PART2 right2================= */
+
+.parth2 .right2 {
+    /* height: 520px; */
+    border: 0px solid #2cc7c23d;
+    padding-top: 125px;
+    padding-bottom: 135px;
+}
+.parth2 .right2 .text {
+    font-size: 17px;
+    color: #828689;
+    text-align: justify;
+}
+.parth2 .right2 a {
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: bolder;
+    color: #2cc7c1;
+    text-decoration: none;
+}
+/* ==========================content PART2 left2================= */
+.parth2 .left2 {
+    /* height: 520px; */
+    border: 0px solid #2cc7c23d;
+    padding-top: 120px;
+    padding-bottom: 135px;
+    display: flex;
+    justify-content: center;
+}
+/* ==========================content PART2 left3================= */
+.parth2 .right3 {
+    /* height: 520px; */
+    border: 0px solid #2cc7c23d;
+    /* padding-top: 60px; */
+    padding-bottom: 145px;
+}
+.carousel-item {
+    height: 320px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-indicators {
+    width: auto;
+    height: 20px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: auto;
+    bottom: 18px;
+}
+.carousel-indicators li {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #65d2ce;
+}
+.carousel-indicators li.active {
+    background: #65d2ce;
+}
+/* ==========================content PART2 left3================= */
+
+.parth2 .left3 {
+    /* height: 520px; */
+    border: 0px solid #2cc7c23d;
+    padding-bottom: 135px;
+    /* padding-top: 60px; */
+}
+.parth2 .left3 .text {
+    font-size: 17px;
+    color: #828689;
+    text-align: justify;
+}
+.parth2 .left3 a {
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: bolder;
+    color: #2cc7c1;
+    text-decoration: none;
+}
+
+/* ==============================CONTENT 2======================================== */
+
+.content2 {
+    /* max-width: 1170px;
+    max-height: 615px; */
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+.content2 h3 {
+    padding-top: 150px;
+    text-align: center;
+}
+.content2 h2 {
+    padding: 0px 107px 0 107px;
+    text-align: center;
+}
+.form {
+    border: 0px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.registration {
+    /* width: 975px; */
+    min-height: 155px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 155px;
+    padding: 54px 48px 54px 48px;
+}
+
+.form-inline .form-control {
+    /* width: 210px; */
+    height: 50px;
+    border: 2px solid #95e3e0;
+    color: #6a7079;
+}
+.form-inline .name {
+    height: 50px;
+    padding: 2px;
+    border: 2px solid #95e3e0;
+    background: white;
+    border-radius: 5px;
+}
+.form-inline .fa {
+    color: #2cc7c1;
+}
+.form-inline input {
+    width: 170px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+.form-inline button {
+    height: 40px;
+    border: none;
+    border: 2px solid #95e3e0;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.form-inline .email {
+    width: 210px;
+    height: 50px;
+    background: #efefef;
+    border: none;
+    color: #a7a7a7;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.form-inline .price {
+    width: 210px;
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid #15abea;
+    border-radius: 5px;
+    color: #6a7079;
+    outline: none;
+}
+.registration .btn-secondary {
+    margin-top: 0;
+}
+/* ==============================CONTENT 3======================================== */
+
+.content3 .parth3 .sponsors {
+    border: 0px solid grey;
+    margin: 55px 0 77px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.content3 .parth3 img {
+    padding: 10px;
+}
+
+/* ==============================CONTENT 4======================================== */
+.content4 {
+    width: 100%;
+    height: 100vh;
+    /* height: 673px; */
+    background: url("../img/map.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* =============================parth 4====================== */
+.content5 {
+    width: 100%;
+    background-color: #525b64;
+}
+.parth4 {
+    color: white;
+}
+.parth4 .end {
+    padding: 94px 0 87px 0;
+}
+.parth4 .title {
+    font-size: 25px;
+}
+.parth4 .text2 {
+    font-size: 16px;
+    color: #cdd0d2;
+    padding-right: 80px;
+}
+.parth4 p img {
+    padding: 0 10px 0 10px;
+}
+
+.parth4 .title1 {
+    font-family: "Ubuntu-Medium";
+    font-size: 20px;
+}
+.parth4 p span {
+    color: #2cc7c1;
+}
+.parth4 .contacts {
+    font-family: "Ubuntu-Medium";
+    font-size: 18px;
+    color: #2cc7c1;
+}
+.parth4 .contacts .fa {
+    color: #2cc7c1;
+    padding-right: 10px;
+}
+/*===========================================FOOTER=============================== */
+footer {
+    background-color: #3f464c;
+}
+footer .copyright {
+    background: #3f464c;
+    color: #7d8083;
+    padding-left: 140px;
+    padding-top: 15px;
+}
+
+/* =========================медиа-запросы=================*/
+@media screen and (max-width: 1199px) {
+    h3 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .parth1 .text {
+        font-size: 14px;
+    }
+    .parth1 ul li {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .registration .btn-secondary {
+        margin: auto;
+        margin-top: 30px;
+    }
+    .parth4 .text2 {
+        font-size: 14px;
+    }
+    .parth4 .contacts {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .parth1 .text {
+        font-size: 14px;
+    }
+    .parth1 ul li {
+        font-size: 14px;
+    }
+    .parth1 .left h3 {
+        font-size: 24px;
+        padding-bottom: 0px;
+    }
+    .parth1 h2 {
+        font-size: 17px;
+    }
+    .parth1 .text {
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+    .parth1 ul li {
+        margin-top: -10px;
+        margin-right: 10px;
+        font-size: 14px;
+        padding-bottom: none;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        font-size: 12px;
+    }
+    .parth1 .right a {
+        font-size: 12px;
+    }
+    .parth1 .imgtab {
+        margin: 50px 20px 30px 0;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .registration .btn-secondary {
+        margin-right: 25px;
+        margin-bottom: 30px;
+    }
+    .parth4 .text2 {
+        font-size: 12px;
+    }
+    .parth4 .contacts {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .date h4 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .head p {
+        font-size: 16px;
+    }
+    .head img {
+        width: 80%;
+    }
+    .parth1 .imgtab {
+        width: 90%;
+    }
+    .parth1 .imgtab {
+        margin: 0 20px 0 0;
+    }
+    .form {
+        justify-content: center;
+    }
+    .price {
+        margin-left: 10px;
+    }
+    .name {
+        margin-right: 7px;
+    }
+    .parth4 .text2 {
+        font-size: 16px;
+        padding-left: 50px;
+    }
+    .parth4 .contacts {
+        font-size: 16px;
+        padding-left: 50px;
+    }
+    .parth4 .title {
+        padding-left: 50px;
+    }
+    .parth4 .title1 {
+        padding-left: 50px;
+    }
+    .parth4 .end img {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .date h4 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .head p {
+        font-size: 14px;
+    }
+    .head img {
+        width: 70%;
+    }
+    .form {
+        justify-content: center;
+    }
+    .form-inline .email {
+        margin: 15px 2px 15px 0;
+    }
+    .form-inline .name {
+        margin: 15px 0 0 0;
+    }
+    .form-inline .price {
+        margin: 0 2px 15px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .head img {
+        width: 50%;
+    }
+    .date h4 {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 10px 0 10px 0;
+    }
+    .head p {
+        font-size: 14px;
+    }
+    .head .buttons {
+        width: 300px;
+        justify-content: space-around;
+    }
+    .head .btn-secondary {
+        width: 130px;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        font-size: 12px;
+    }
+    .parth1 .right a {
+        font-size: 12px;
+    }
+    .tab-content .text {
+        text-align: justify;
+        padding-bottom: 0;
+    }
+    .parth1 ul li {
+        margin-top: -5px;
+        margin-right: 10px;
+        font-size: 12px;
+        padding-bottom: none;
+    }
+    .parth1 .imgtab {
+        margin: 60px 20px 30px 0;
+    }
+    .parth1 .imgtab:hover {
+        background-image: url("../img/tab_img2.png");
+        background-size: 100%;
+    }
+    .form {
+        justify-content: center;
+    }
+}
